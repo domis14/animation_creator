@@ -8,7 +8,7 @@ from media.s3_storage import S3MediaStorage
 app = Flask(__name__)
 
 s3 = boto3.resource('s3')
-media_storage = S3MediaStorage(s3, os.getenv('APP_BUCKET_NAME'))
+media_storage = S3MediaStorage(s3, os.getenv('179647'))
 
 @app.route("/")
 def hello():
@@ -38,4 +38,4 @@ def prepare():
   )
 
 if __name__ == '__main__':
-  app.run(host="0.0.0.0", port=8080, debug=True)
+  app.run(host="18.196.69.237", port=8080, debug=True)
