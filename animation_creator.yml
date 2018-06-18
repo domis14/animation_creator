@@ -17,10 +17,6 @@
        - "python36"
        - "python36-pip"
        - "pytest"
-   - name: "cloning repo"
-     git:
-       repo: https://github.com/domis14/animation_creator.git
-       dest: ~/179647
    - name: "installing python packages"
      pip:
        name: "{{ item }}"
